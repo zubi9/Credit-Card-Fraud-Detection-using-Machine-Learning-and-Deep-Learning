@@ -1,0 +1,116 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+
+# =========================
+# Machine Learning
+# =========================
+
+# Trained models
+models/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.pkl
+*.joblib
+
+# Logs
+logs/
+runs/
+wandb/
+tensorboard/
+*.log
+
+# Hyperparameter tuning
+optuna/
+ray_results/
+
+# =========================
+# Data
+# =========================
+
+# Raw datasets
+data/
+dataset/
+datasets/
+
+# Temporary files
+temp/
+tmp/
+
+# CSV exports (optional)
+# Uncomment if data should never be tracked
+# *.csv
+
+# =========================
+# Images / Outputs
+# =========================
+outputs/
+results/
+predictions/
+visualizations/
+figures/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Docker
+# =========================
+*.pid
+
+# =========================
+# Cache
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# CUDA / Large Files
+# =========================
+*.bin
+*.safetensors
