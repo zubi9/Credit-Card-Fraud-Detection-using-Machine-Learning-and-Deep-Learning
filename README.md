@@ -1,6 +1,3 @@
-# README.md
-
-```markdown
 # Credit Card Fraud Detection: End-to-End Machine Learning Engineering Pipeline
 
 ## Advanced Machine Learning System for Fraud Risk Prediction, Model Explainability, and Production-Oriented Deployment
@@ -77,35 +74,16 @@ Challenges:
 
 The project follows a complete ML engineering lifecycle:
 
-```
+## Workflow
 
-Data Acquisition
-|
-|
-Exploratory Data Analysis
-|
-|
-Data Cleaning & Preprocessing
-|
-|
-Feature Engineering
-|
-|
-Model Development
-|
-|
-Model Evaluation
-|
-|
-Explainable AI
-|
-|
-Final Testing
-|
-|
-Inference Pipeline
+1. Data Collection
+2. Data Exploration & Preprocessing
+3. Feature Engineering
+4. Model Training
+5. Model Evaluation
+6. Explainable AI
+7. Testing & Inference
 
-```
 
 ---
 
@@ -169,9 +147,6 @@ Developed a fully connected neural network using TensorFlow/Keras.
 
 Architecture:
 
-```
-
-
 ```mermaid
 flowchart TD
     A[Input Layer]
@@ -193,12 +168,9 @@ flowchart TD
 
     M --> N[Output Layer<br/>1 Unit]
     N --> O[Sigmoid Activation]
-    O --> P[Fraud Probability]
+    O --> P(Fraud Probability)
 ```
-
-
-```
-
+---
 Implemented:
 
 - Batch normalization
@@ -279,7 +251,7 @@ Implemented:
 
 Example question answered:
 
-> "Why did the model classify this transaction as high risk?"
+> **"Why did the model classify this transaction as high risk?"**
 
 ---
 
@@ -320,23 +292,13 @@ Saved:
 
 Created reusable prediction interface:
 
-Input:
-
+```mermaid
+flowchart LR
+    A[Transaction Features] --> B[Data Preprocessing]
+    B --> C[Fraud Detection Model]
+    C --> D[Fraud Probability]
+    C --> E[Fraud Classification]
 ```
-
-Transaction Features
-
-```
-
-Output:
-
-```
-
-Fraud Probability
-Fraud Classification
-
-```
-
 ---
 
 # Technology Stack
@@ -381,13 +343,8 @@ Fraud Classification
 Credit_Card_Fraud_Detection/
 │
 ├── artifacts/
-│   ├── feature_names.pkl
-│   ├── label_encoders.pkl
-│   ├── scaler.pkl
+│   ├── metadate.jsom
 │   └── ...
-│
-├── catboost_info/
-│   └── (CatBoost training logs)
 │
 ├── data/
 │   ├── raw/
@@ -413,11 +370,7 @@ Credit_Card_Fraud_Detection/
 │   └── ...
 │
 ├── Results/
-│   ├── figures/
-│   ├── metrics/
-│   ├── confusion_matrices/
-│   ├── roc_curves/
-│   └── shap/
+│   └── all_resutls.csv/
 │
 ├── venv/
 │
@@ -461,6 +414,7 @@ Potential extensions:
 
 - End-to-end machine learning development
 - Fraud analytics
+- Exploratory Data Analysis (EDA) 
 - Feature engineering
 - Imbalanced classification
 - Gradient boosting models
