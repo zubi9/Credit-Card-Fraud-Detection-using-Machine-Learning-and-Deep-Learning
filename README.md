@@ -208,15 +208,17 @@ because it better represents performance on highly imbalanced fraud datasets.
 
 ## Selected Model: LightGBM
 
-| Metric | Score |
-|-|-:|
-| Accuracy | 0.9708 |
-| Balanced Accuracy | 0.5868 |
-| Precision | 0.9259 |
-| Recall | 0.1742 |
-| F1 Score | 0.2932 |
-| ROC-AUC | 0.9020 |
-| PR-AUC | 0.5264 |
+
+| Metric | Result |
+| :--- | :--- |
+| **Accuracy** | 96.45% |
+| **Balanced Accuracy** | 74.87% |
+| **Precision (Fraud)** | 49.02% |
+| **Recall (Fraud)** | 51.67% |
+| **F1-Score (Fraud)** | 50.31% |
+| **ROC-AUC** | 90.35% |
+| **PR-AUC** | 52.30% |
+
 
 ## Interpretation
 
